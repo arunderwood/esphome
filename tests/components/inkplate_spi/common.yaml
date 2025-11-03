@@ -1,0 +1,11 @@
+display:
+  - platform: inkplate_spi
+    id: inkplate_display
+    model: inkplate_2
+    cs_pin: ${cs_pin}
+    dc_pin: ${dc_pin}
+    reset_pin: ${reset_pin}
+    busy_pin: ${busy_pin}
+    update_interval: 60s
+    lambda: |-
+      it.rectangle(0, 0, it.get_width(), it.get_height());

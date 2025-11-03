@@ -1,0 +1,10 @@
+substitutions:
+  cs_pin: GPIO15
+  dc_pin: GPIO33
+  reset_pin: GPIO21
+  busy_pin: GPIO32
+
+packages:
+  spi: !include ../../test_build_components/common/spi/esp32-idf.yaml
+
+<<: !include common.yaml
